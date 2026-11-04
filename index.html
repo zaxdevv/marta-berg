@@ -1,244 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marta Berg · Photographer in Saint Petersburg</title>
-  <meta name="description" content="Marta Berg is a portrait, wedding and editorial photographer based in Saint Petersburg. Natural light, honest stories, timeless images.">
-  <meta name="author" content="Marta Berg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Марта Берг — фотограф архитектуры, Петербург</title>
+  <meta name="description" content="Марта Берг снимает архитектуру Петербурга: парадные, дворы-колодцы, набережные в тумане. Съёмка объектов для архитекторов, реставраторов и изданий. Концепт сайта.">
   <link rel="canonical" href="https://hmsusbusas-png.github.io/marta-berg/">
-
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Marta Berg · Photographer in Saint Petersburg">
-  <meta property="og:description" content="Portrait, wedding and editorial photography. Saint Petersburg.">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Марта Берг — фотограф архитектуры">
+  <meta property="og:description" content="Три серии о Петербурге: туман, лестницы, дворы.">
   <meta property="og:url" content="https://hmsusbusas-png.github.io/marta-berg/">
-  <meta property="og:image" content="https://hmsusbusas-png.github.io/marta-berg/screenshots/desktop.png">
+  <meta property="og:image" content="https://hmsusbusas-png.github.io/marta-berg/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="theme-color" content="#ebe8e2">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a class="skip" href="#main">К фотографиям</a>
+  <header class="top">
+    <a class="top__name" href="./">Марта Берг</a>
+    <nav class="top__nav" aria-label="Разделы">
+      <a href="#tuman">Серии</a>
+      <a href="#syomka">Съёмка</a>
+      <a href="#kontakty">Связаться</a>
+    </nav>
+  </header>
 
-<header class="site-header" id="top">
-  <nav class="nav container">
-    <a class="nav__brand" href="#top">Marta Berg</a>
-    <button class="nav__toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
-      <span></span><span></span>
-    </button>
-    <ul class="nav__links" id="navLinks">
-      <li><a href="#work">Work</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-
-  <section class="hero">
-    <img class="hero__img" src="https://picsum.photos/seed/marta-hero/1920/1280" alt="Misty morning on the Neva embankment, Saint Petersburg" fetchpriority="high">
-    <div class="hero__overlay">
-      <h1 class="hero__title">Marta<br><em>Berg</em></h1>
-      <p class="hero__sub">Photographer · Saint&nbsp;Petersburg</p>
-    </div>
-    <a class="hero__scroll" href="#work" aria-label="Scroll to work">Scroll</a>
-  </section>
-
-  <section class="featured section" id="work">
-    <div class="container">
-      <h2 class="section__title reveal">Selected work</h2>
-      <div class="featured__grid">
-        <figure class="featured__item reveal">
-          <img src="https://picsum.photos/seed/mb-feature-1/1000/1250" alt="Portrait of a dancer in a studio window light" loading="lazy">
-          <figcaption>Anna, studio session</figcaption>
-        </figure>
-        <figure class="featured__item reveal">
-          <img src="https://picsum.photos/seed/mb-feature-2/1000/700" alt="Bride and groom walking through an old courtyard" loading="lazy">
-          <figcaption>Nadia &amp; Ilya, wedding</figcaption>
-        </figure>
-        <figure class="featured__item reveal">
-          <img src="https://picsum.photos/seed/mb-feature-3/1000/1250" alt="Editorial fashion shoot on rooftops" loading="lazy">
-          <figcaption>Roof series, editorial</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="gallery section section--tint" id="gallery">
-    <div class="container">
-      <h2 class="section__title reveal">Gallery</h2>
-      <p class="section__lead reveal">A rotating selection from recent portrait, wedding and editorial shoots.</p>
-      <div class="masonry">
-        <figure class="masonry__item reveal" data-caption="Vera, studio portrait, natural light">
-          <img src="https://picsum.photos/seed/mb-g1/800/1000" alt="Studio portrait of Vera in soft window light" loading="lazy">
-        </figure>
-        <figure class="masonry__item reveal" data-caption="Ksenia &amp; Mark, engagement walk on Vasilievsky Island">
-          <img src="https://picsum.photos/seed/mb-g2/800/560" alt="Engagement couple walking along the embankment" loading="lazy">
-        </figure>
-        <figure class="masonry__item reveal" data-caption="Linen &amp; Stone, editorial for Atelier Nord">
-          <img src="https://picsum.photos/seed/mb-g3/800/1100" alt="Editorial fashion image in linen textures" loading="lazy">
-        </figure>
-        <figure class="masonry__item reveal" data-caption="Wedding morning at the Hotel Astoria">
-          <img src="https://picsum.photos/seed/mb-g4/800/600" alt="Bride getting ready by a tall hotel window" loading="lazy">
-        </figure>
-        <figure class="masonry__item reveal" data-caption="Dasha, dancer series, second take">
-          <img src="https://picsum.photos/seed/mb-g5/800/1050" alt="Dancer mid-movement in a rehearsal hall" loading="lazy">
-        </figure>
-        <figure class="masonry__item reveal" data-caption="First snow on Gorokhovaya Street">
-          <img src="https://picsum.photos/seed/mb-g6/800/540" alt="Pedestrians crossing a snowy street" loading="lazy">
-        </figure>
-        <figure class="masonry__item reveal" data-caption="Timur, actor headshots">
-          <img src="https://picsum.photos/seed/mb-g7/800/1000" alt="Actor headshot against a plain grey backdrop" loading="lazy">
-        </figure>
-        <figure class="masonry__item reveal" data-caption="Olga &amp; Pavel, registry office, first look">
-          <img src="https://picsum.photos/seed/mb-g8/800/620" alt="Newlyweds sharing a quiet moment on a staircase" loading="lazy">
-        </figure>
-        <figure class="masonry__item reveal" data-caption="Silver Hour, personal series">
-          <img src="https://picsum.photos/seed/mb-g9/800/1080" alt="Figure in soft silver evening light" loading="lazy">
-        </figure>
-        <figure class="masonry__item reveal" data-caption="Sofia, portrait with her grandmother's scarf">
-          <img src="https://picsum.photos/seed/mb-g10/800/980" alt="Close portrait of Sofia wearing a patterned scarf" loading="lazy">
-        </figure>
-        <figure class="masonry__item reveal" data-caption="Backstage, theatre premiere, New Holland stage">
-          <img src="https://picsum.photos/seed/mb-g11/800/580" alt="Backstage moment before a theatre premiere" loading="lazy">
-        </figure>
-        <figure class="masonry__item reveal" data-caption="Katya &amp; Anton, wedding on the Gulf of Finland">
-          <img src="https://picsum.photos/seed/mb-g12/800/1020" alt="Couple standing by the water at dusk" loading="lazy">
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="about section" id="about">
-    <div class="container about__grid">
-      <figure class="about__photo reveal">
-        <img src="https://picsum.photos/seed/mb-portrait/900/1150" alt="Portrait of Marta Berg with her camera" loading="lazy">
+  <main id="main">
+    <section class="intro" aria-label="О фотографе">
+      <p class="intro__line">Фотограф архитектуры. Петербург.</p>
+      <p class="intro__text">Снимаю дома, лестницы и дворы для архитектурных бюро, реставраторов и журналов. Здесь три серии, которые я снимаю для себя между заказами.</p>
+      <ol class="intro__index">
+        <li><a href="#tuman"><span>I</span> Туман</a></li>
+        <li><a href="#lestnicy"><span>II</span> Лестницы</a></li>
+        <li><a href="#dvory"><span>III</span> Дворы</a></li>
+      </ol>
+      <figure class="intro__photo">
+        <a class="frame__link" href="#lestnicy" aria-label="К серии «Лестницы»"><picture><source type="image/avif" srcset="img/lestnica-sadovaya-vverh-720.avif 720w, img/lestnica-sadovaya-vverh-1280.avif 1280w, img/lestnica-sadovaya-vverh-2000.avif 2000w" sizes="(min-width: 900px) 46vw, 100vw"><img src="img/lestnica-sadovaya-vverh-1280.webp" srcset="img/lestnica-sadovaya-vverh-720.webp 720w, img/lestnica-sadovaya-vverh-1280.webp 1280w, img/lestnica-sadovaya-vverh-2000.webp 2000w" sizes="(min-width: 900px) 46vw, 100vw" width="1280" height="1707" alt="Взгляд снизу вверх по спирали лестницы к круглому световому окну" fetchpriority="high" decoding="async"></picture></a>
+        <figcaption class="label label--short"><span class="label__no">№ 09</span><span class="label__name">Световой фонарь</span><span class="label__place">из серии «Лестницы»</span></figcaption>
       </figure>
-      <div class="about__text">
-        <h2 class="section__title reveal">About</h2>
-        <p class="reveal">I am a photographer based in Saint Petersburg, working mostly with people: portraits, weddings and editorial assignments. I came to photography through drawing, and I still think of every frame as a line: where it starts, where it rests, what it leaves out.</p>
-        <p class="reveal">For the past nine years I have shot on the embankments, in old stairwells and rented studios, in winter light that forgives almost nothing. My approach is quiet: minimal direction, no forced poses, long walks when the weather allows. The best photographs usually happen ten minutes after everyone stops performing for the camera.</p>
-        <p class="reveal">Alongside client work I keep a slow personal practice and exhibit from time to time. If you are planning a shoot and want images that still feel like you in ten years, I would be glad to hear about it.</p>
-        <ul class="about__facts reveal">
-          <li><strong>9</strong><span>years of practice</span></li>
-          <li><strong>200+</strong><span>shoots delivered</span></li>
-          <li><strong>3</strong><span>group exhibitions</span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="services section section--tint" id="services">
-    <div class="container">
-      <h2 class="section__title reveal">Services</h2>
-      <div class="services__list">
-        <article class="service reveal">
-          <h3>Portrait</h3>
-          <p>A two-hour session in the studio or around the city. Includes location scouting, a private online gallery and fifteen retouched images.</p>
-          <span class="service__price">from €350</span>
-        </article>
-        <article class="service reveal">
-          <h3>Wedding</h3>
-          <p>Full-day coverage from morning preparations to the first dance. Up to ten hours, a second photographer on request, a linen box of prints within two months.</p>
-          <span class="service__price">from €1,400</span>
-        </article>
-        <article class="service reveal">
-          <h3>Editorial</h3>
-          <p>Commissioned work for magazines, brands and designers: lookbooks, portraits of makers, reportage from sets and events. Day rate with licensing discussed individually.</p>
-          <span class="service__price">from €600</span>
-        </article>
-      </div>
-    </div>
-  </section>
+    <section class="series" id="tuman" aria-labelledby="tuman-title">
+      <header class="series__head">
+        <p class="series__num" aria-hidden="true">I</p>
+        <h2 class="series__title" id="tuman-title">Туман</h2>
+        <p class="series__text">Туман в Петербурге держится до полудня, если повезёт. Город теряет детали, и от него остаётся контур: ограда, фонарь, пролёт моста. Снимаю с набережной, не отходя от гранита.</p>
+        <p class="series__count">5 кадров</p>
+      </header>
+      <figure class="frame frame--wide">
+        <a class="frame__link" href="img/tuman-fonar-2000.webp" data-full><picture><source type="image/avif" srcset="img/tuman-fonar-720.avif 720w, img/tuman-fonar-1280.avif 1280w, img/tuman-fonar-2000.avif 2000w" sizes="(min-width: 1360px) 1240px, calc(100vw - 2 * var(--pad, 20px))"><img src="img/tuman-fonar-1280.webp" srcset="img/tuman-fonar-720.webp 720w, img/tuman-fonar-1280.webp 1280w, img/tuman-fonar-2000.webp 2000w" sizes="(min-width: 1360px) 1240px, calc(100vw - 2 * var(--pad, 20px))" width="1280" height="960" alt="Набережная в густом тумане: фонарный столб на гранитной тумбе, вдали едва виден мост" loading="lazy" decoding="async"></picture></a>
+        <figcaption class="label">
+          <span class="label__no">№ 01</span>
+          <span class="label__name">Фонарь</span>
+          <span class="label__place">Набережная, туман</span>
+          <span class="label__credit">Фото: <a href="https://commons.wikimedia.org/wiki/File:Myst_(202916037).jpeg">Serge Novikoff</a>, CC BY-SA 3.0</span>
+        </figcaption>
+      </figure>
+      <figure class="frame frame--right">
+        <a class="frame__link" href="img/tuman-vetka-2000.webp" data-full><picture><source type="image/avif" srcset="img/tuman-vetka-720.avif 720w, img/tuman-vetka-1280.avif 1280w, img/tuman-vetka-2000.avif 2000w" sizes="(min-width: 900px) 58vw, 100vw"><img src="img/tuman-vetka-1280.webp" srcset="img/tuman-vetka-720.webp 720w, img/tuman-vetka-1280.webp 1280w, img/tuman-vetka-2000.webp 2000w" sizes="(min-width: 900px) 58vw, 100vw" width="1280" height="960" alt="Голые ветви дерева над чугунной оградой, река и мост тонут в тумане" loading="lazy" decoding="async"></picture></a>
+        <figcaption class="label">
+          <span class="label__no">№ 02</span>
+          <span class="label__name">Ветка</span>
+          <span class="label__place">Набережная, туман</span>
+          <span class="label__credit">Фото: <a href="https://commons.wikimedia.org/wiki/File:Myst_(202916175).jpeg">Serge Novikoff</a>, CC BY-SA 3.0</span>
+        </figcaption>
+      </figure>
+      <figure class="frame frame--narrow">
+        <a class="frame__link" href="img/tuman-kolokolnya-2000.webp" data-full><picture><source type="image/avif" srcset="img/tuman-kolokolnya-720.avif 720w, img/tuman-kolokolnya-1280.avif 1280w, img/tuman-kolokolnya-2000.avif 2000w" sizes="(min-width: 900px) 40vw, 100vw"><img src="img/tuman-kolokolnya-1280.webp" srcset="img/tuman-kolokolnya-720.webp 720w, img/tuman-kolokolnya-1280.webp 1280w, img/tuman-kolokolnya-2000.webp 2000w" sizes="(min-width: 900px) 40vw, 100vw" width="1280" height="1704" alt="Колокольня собора проступает сквозь снежный туман над заснеженным каналом" loading="lazy" decoding="async"></picture></a>
+        <figcaption class="label">
+          <span class="label__no">№ 03</span>
+          <span class="label__name">Колокольня</span>
+          <span class="label__place">Никольский морской собор, Крюков канал</span>
+          <span class="label__credit">Фото: <a href="https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D1%8F_%D0%9C%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%81%D0%BE%D0%B1%D0%BE%D1%80%D0%B0.jpg">Sav-1667</a>, CC BY-SA 3.0</span>
+        </figcaption>
+      </figure>
+      <figure class="frame frame--left">
+        <a class="frame__link" href="img/tuman-tumba-2000.webp" data-full><picture><source type="image/avif" srcset="img/tuman-tumba-720.avif 720w, img/tuman-tumba-1280.avif 1280w, img/tuman-tumba-2000.avif 2000w" sizes="(min-width: 900px) 58vw, 100vw"><img src="img/tuman-tumba-1280.webp" srcset="img/tuman-tumba-720.webp 720w, img/tuman-tumba-1280.webp 1280w, img/tuman-tumba-2000.webp 2000w" sizes="(min-width: 900px) 58vw, 100vw" width="1280" height="960" alt="Гранитная тумба и решётка набережной, река подо льдом уходит в туман" loading="lazy" decoding="async"></picture></a>
+        <figcaption class="label">
+          <span class="label__no">№ 04</span>
+          <span class="label__name">Лёд</span>
+          <span class="label__place">Набережная, лёд на реке</span>
+          <span class="label__credit">Фото: <a href="https://commons.wikimedia.org/wiki/File:Myst_(202916253).jpeg">Serge Novikoff</a>, CC BY-SA 3.0</span>
+        </figcaption>
+      </figure>
+      <figure class="frame frame--wide">
+        <a class="frame__link" href="img/tuman-kolonnada-2000.webp" data-full><picture><source type="image/avif" srcset="img/tuman-kolonnada-720.avif 720w, img/tuman-kolonnada-1280.avif 1280w, img/tuman-kolonnada-2000.avif 2000w" sizes="(min-width: 1360px) 1240px, calc(100vw - 2 * var(--pad, 20px))"><img src="img/tuman-kolonnada-1280.webp" srcset="img/tuman-kolonnada-720.webp 720w, img/tuman-kolonnada-1280.webp 1280w, img/tuman-kolonnada-2000.webp 2000w" sizes="(min-width: 1360px) 1240px, calc(100vw - 2 * var(--pad, 20px))" width="1280" height="960" alt="Колоннада собора и памятник в утреннем тумане, на переднем плане ограда сквера" loading="lazy" decoding="async"></picture></a>
+        <figcaption class="label">
+          <span class="label__no">№ 05</span>
+          <span class="label__name">Колоннада</span>
+          <span class="label__place">Казанский собор</span>
+          <span class="label__credit">Фото: <a href="https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BE%D1%80.jpg">Александр Скибицкий</a>, CC BY-SA 3.0</span>
+        </figcaption>
+      </figure>
+    </section>
+    <section class="series" id="lestnicy" aria-labelledby="lestnicy-title">
+      <header class="series__head">
+        <p class="series__num" aria-hidden="true">II</p>
+        <h2 class="series__title" id="lestnicy-title">Лестницы</h2>
+        <p class="series__text">Парадные снимаю рано утром, пока жильцы не начали ходить. В доходном доме лестница была единственным местом, где архитектор мог позволить себе лишнее: чугун, световой фонарь, плитку в два цвета.</p>
+        <p class="series__count">5 кадров</p>
+      </header>
+      <figure class="frame frame--narrow">
+        <a class="frame__link" href="img/lestnica-sadovaya-2000.webp" data-full><picture><source type="image/avif" srcset="img/lestnica-sadovaya-720.avif 720w, img/lestnica-sadovaya-1280.avif 1280w, img/lestnica-sadovaya-2000.avif 2000w" sizes="(min-width: 900px) 40vw, 100vw"><img src="img/lestnica-sadovaya-1280.webp" srcset="img/lestnica-sadovaya-720.webp 720w, img/lestnica-sadovaya-1280.webp 1280w, img/lestnica-sadovaya-2000.webp 2000w" sizes="(min-width: 900px) 40vw, 100vw" width="1280" height="1707" alt="Овальная лестница с чугунными перилами, вид сверху в пролёт" loading="lazy" decoding="async"></picture></a>
+        <figcaption class="label">
+          <span class="label__no">№ 06</span>
+          <span class="label__name">Спираль</span>
+          <span class="label__place">Садовая, 3, Ордонансгауз</span>
+          <span class="label__credit">Фото: <a href="https://commons.wikimedia.org/wiki/File:Ordonnance_Haus_internal_staircase,_Sadovaya_3,_Saint_Petersburg_iii.jpg">Alandislands</a>, CC BY-SA 4.0</span>
+        </figcaption>
+      </figure>
+      <figure class="frame frame--pair-a">
+        <a class="frame__link" href="img/lestnica-gorohovaya-2000.webp" data-full><picture><source type="image/avif" srcset="img/lestnica-gorohovaya-720.avif 720w, img/lestnica-gorohovaya-1280.avif 1280w, img/lestnica-gorohovaya-2000.avif 2000w" sizes="(min-width: 900px) 44vw, 100vw"><img src="img/lestnica-gorohovaya-1280.webp" srcset="img/lestnica-gorohovaya-720.webp 720w, img/lestnica-gorohovaya-1280.webp 1280w, img/lestnica-gorohovaya-2000.webp 2000w" sizes="(min-width: 900px) 44vw, 100vw" width="1280" height="1761" alt="Марши лестницы с кованой решёткой, на площадке высокое окно" loading="lazy" decoding="async"></picture></a>
+        <figcaption class="label">
+          <span class="label__no">№ 07</span>
+          <span class="label__name">Парадная</span>
+          <span class="label__place">Гороховая, 64</span>
+          <span class="label__credit">Фото: <a href="https://commons.wikimedia.org/wiki/File:Gorohovaya_Street_64_4A7A3585_Saint_Petersburg_(35769615751).jpg">Ninara</a>, CC BY 2.0</span>
+        </figcaption>
+      </figure>
+      <figure class="frame frame--pair-b">
+        <a class="frame__link" href="img/lestnica-chaikovskogo-2000.webp" data-full><picture><source type="image/avif" srcset="img/lestnica-chaikovskogo-720.avif 720w, img/lestnica-chaikovskogo-1280.avif 1280w, img/lestnica-chaikovskogo-2000.avif 2000w" sizes="(min-width: 900px) 44vw, 100vw"><img src="img/lestnica-chaikovskogo-1280.webp" srcset="img/lestnica-chaikovskogo-720.webp 720w, img/lestnica-chaikovskogo-1280.webp 1280w, img/lestnica-chaikovskogo-2000.webp 2000w" sizes="(min-width: 900px) 44vw, 100vw" width="1280" height="1707" alt="Узкий лестничный пролёт, тень от перил ложится на ступени" loading="lazy" decoding="async"></picture></a>
+        <figcaption class="label">
+          <span class="label__no">№ 08</span>
+          <span class="label__name">Пролёт</span>
+          <span class="label__place">Чайковского, 42</span>
+          <span class="label__credit">Фото: <a href="https://commons.wikimedia.org/wiki/File:SPb_Tchaikovsky,_42_-_staircase_in_door_(2024-09-26).jpg">Kaganer</a>, CC BY-SA 4.0</span>
+        </figcaption>
+      </figure>
+      <figure class="frame frame--right">
+        <a class="frame__link" href="img/lestnica-sadovaya-vverh-2000.webp" data-full><picture><source type="image/avif" srcset="img/lestnica-sadovaya-vverh-720.avif 720w, img/lestnica-sadovaya-vverh-1280.avif 1280w, img/lestnica-sadovaya-vverh-2000.avif 2000w" sizes="(min-width: 900px) 58vw, 100vw"><img src="img/lestnica-sadovaya-vverh-1280.webp" srcset="img/lestnica-sadovaya-vverh-720.webp 720w, img/lestnica-sadovaya-vverh-1280.webp 1280w, img/lestnica-sadovaya-vverh-2000.webp 2000w" sizes="(min-width: 900px) 58vw, 100vw" width="1280" height="1707" alt="Взгляд снизу вверх по спирали лестницы к круглому световому окну" loading="lazy" decoding="async"></picture></a>
+        <figcaption class="label">
+          <span class="label__no">№ 09</span>
+          <span class="label__name">Световой фонарь</span>
+          <span class="label__place">Садовая, 3, взгляд вверх</span>
+          <span class="label__credit">Фото: <a href="https://commons.wikimedia.org/wiki/File:Ordonnance_Haus_internal_staircase,_Sadovaya_3,_Saint_Petersburg_v.jpg">Alandislands</a>, CC BY-SA 4.0</span>
+        </figcaption>
+      </figure>
+      <figure class="frame frame--left">
+        <a class="frame__link" href="img/lestnica-gorohovaya-2-1984.webp" data-full><picture><source type="image/avif" srcset="img/lestnica-gorohovaya-2-720.avif 720w, img/lestnica-gorohovaya-2-1280.avif 1280w, img/lestnica-gorohovaya-2-1984.avif 1984w" sizes="(min-width: 900px) 58vw, 100vw"><img src="img/lestnica-gorohovaya-2-1280.webp" srcset="img/lestnica-gorohovaya-2-720.webp 720w, img/lestnica-gorohovaya-2-1280.webp 1280w, img/lestnica-gorohovaya-2-1984.webp 1984w" sizes="(min-width: 900px) 58vw, 100vw" width="1280" height="1951" alt="Прямой марш лестницы ведёт к окну, пол выложен плиткой" loading="lazy" decoding="async"></picture></a>
+        <figcaption class="label">
+          <span class="label__no">№ 10</span>
+          <span class="label__name">Окно на площадке</span>
+          <span class="label__place">Гороховая, 64</span>
+          <span class="label__credit">Фото: <a href="https://commons.wikimedia.org/wiki/File:Gorokhovaya_street_64_in_Saint-Petersburg,_Russia.jpg">Ninaras</a>, CC BY 4.0</span>
+        </figcaption>
+      </figure>
+    </section>
+    <section class="series" id="dvory" aria-labelledby="dvory-title">
+      <header class="series__head">
+        <p class="series__num" aria-hidden="true">III</p>
+        <h2 class="series__title" id="dvory-title">Дворы</h2>
+        <p class="series__text">Во дворе-колодце снимать можно только вверх. Камера стоит на брусчатке, объектив широкий, выдержка такая, какую даст небо над крышами.</p>
+        <p class="series__count">5 кадров</p>
+      </header>
+      <figure class="frame frame--wide">
+        <a class="frame__link" href="img/dvor-rubinshteina-23-2000.webp" data-full><picture><source type="image/avif" srcset="img/dvor-rubinshteina-23-720.avif 720w, img/dvor-rubinshteina-23-1280.avif 1280w, img/dvor-rubinshteina-23-2000.avif 2000w" sizes="(min-width: 1360px) 1240px, calc(100vw - 2 * var(--pad, 20px))"><img src="img/dvor-rubinshteina-23-1280.webp" srcset="img/dvor-rubinshteina-23-720.webp 720w, img/dvor-rubinshteina-23-1280.webp 1280w, img/dvor-rubinshteina-23-2000.webp 2000w" sizes="(min-width: 1360px) 1240px, calc(100vw - 2 * var(--pad, 20px))" width="1280" height="960" alt="Двор-колодец снизу: стены с окнами сходятся к прямоугольнику неба" loading="lazy" decoding="async"></picture></a>
+        <figcaption class="label">
+          <span class="label__no">№ 11</span>
+          <span class="label__name">Небо</span>
+          <span class="label__place">Рубинштейна, 23</span>
+          <span class="label__credit">Фото: <a href="https://commons.wikimedia.org/wiki/File:Rubinstein_Street_23_(Saint_Petersburg)_-_courtyard.jpg">Kommunalka1912</a>, CC BY-SA 4.0</span>
+        </figcaption>
+      </figure>
+      <figure class="frame frame--pair-a">
+        <a class="frame__link" href="img/dvor-bez-adresa-2000.webp" data-full><picture><source type="image/avif" srcset="img/dvor-bez-adresa-720.avif 720w, img/dvor-bez-adresa-1280.avif 1280w, img/dvor-bez-adresa-2000.avif 2000w" sizes="(min-width: 900px) 44vw, 100vw"><img src="img/dvor-bez-adresa-1280.webp" srcset="img/dvor-bez-adresa-720.webp 720w, img/dvor-bez-adresa-1280.webp 1280w, img/dvor-bez-adresa-2000.webp 2000w" sizes="(min-width: 900px) 44vw, 100vw" width="1280" height="1933" alt="Узкий двор, водосточные трубы тянутся вверх по стенам" loading="lazy" decoding="async"></picture></a>
+        <figcaption class="label">
+          <span class="label__no">№ 12</span>
+          <span class="label__name">Водосток</span>
+          <span class="label__place">Двор в центре, адрес неизвестен</span>
+          <span class="label__credit">Фото: <a href="https://commons.wikimedia.org/wiki/File:Courtyards_of_St.Petersburg_(25563816025).jpg">Pavel Kirillov</a>, CC BY-SA 2.0</span>
+        </figcaption>
+      </figure>
+      <figure class="frame frame--pair-b">
+        <a class="frame__link" href="img/dvor-rubinshteina-27-2000.webp" data-full><picture><source type="image/avif" srcset="img/dvor-rubinshteina-27-720.avif 720w, img/dvor-rubinshteina-27-1280.avif 1280w, img/dvor-rubinshteina-27-2000.avif 2000w" sizes="(min-width: 900px) 44vw, 100vw"><img src="img/dvor-rubinshteina-27-1280.webp" srcset="img/dvor-rubinshteina-27-720.webp 720w, img/dvor-rubinshteina-27-1280.webp 1280w, img/dvor-rubinshteina-27-2000.webp 2000w" sizes="(min-width: 900px) 44vw, 100vw" width="1280" height="1704" alt="Стены двора снизу вверх, между ними натянуты провода" loading="lazy" decoding="async"></picture></a>
+        <figcaption class="label">
+          <span class="label__no">№ 13</span>
+          <span class="label__name">Провода</span>
+          <span class="label__place">Рубинштейна, 27</span>
+          <span class="label__credit">Фото: <a href="https://commons.wikimedia.org/wiki/File:Saint_Petersburg._Rubinshteyn_Street,_27._Courtyard._-2024-01-28.jpg">Bestalex</a>, CC BY-SA 4.0</span>
+        </figcaption>
+      </figure>
+      <figure class="frame frame--right">
+        <a class="frame__link" href="img/dvor-gavanskaya-2000.webp" data-full><picture><source type="image/avif" srcset="img/dvor-gavanskaya-720.avif 720w, img/dvor-gavanskaya-1280.avif 1280w, img/dvor-gavanskaya-2000.avif 2000w" sizes="(min-width: 900px) 58vw, 100vw"><img src="img/dvor-gavanskaya-1280.webp" srcset="img/dvor-gavanskaya-720.webp 720w, img/dvor-gavanskaya-1280.webp 1280w, img/dvor-gavanskaya-2000.webp 2000w" sizes="(min-width: 900px) 58vw, 100vw" width="1280" height="962" alt="Двор-колодец, вид вверх на облачное небо" loading="lazy" decoding="async"></picture></a>
+        <figcaption class="label">
+          <span class="label__no">№ 14</span>
+          <span class="label__name">Колодец</span>
+          <span class="label__place">Гаванская, 32</span>
+          <span class="label__credit">Фото: <a href="https://commons.wikimedia.org/wiki/File:Saint_Petersburg._Gavanskaya_St.,_32_-_courtyard.jpg">Bestalex</a>, CC0</span>
+        </figcaption>
+      </figure>
+      <figure class="frame frame--wide">
+        <a class="frame__link" href="img/dvor-4-liniya-2000.webp" data-full><picture><source type="image/avif" srcset="img/dvor-4-liniya-720.avif 720w, img/dvor-4-liniya-1280.avif 1280w, img/dvor-4-liniya-2000.avif 2000w" sizes="(min-width: 1360px) 1240px, calc(100vw - 2 * var(--pad, 20px))"><img src="img/dvor-4-liniya-1280.webp" srcset="img/dvor-4-liniya-720.webp 720w, img/dvor-4-liniya-1280.webp 1280w, img/dvor-4-liniya-2000.webp 2000w" sizes="(min-width: 1360px) 1240px, calc(100vw - 2 * var(--pad, 20px))" width="1280" height="848" alt="Стены двора обрамляют облако на тёмном небе" loading="lazy" decoding="async"></picture></a>
+        <figcaption class="label">
+          <span class="label__no">№ 15</span>
+          <span class="label__name">Облако</span>
+          <span class="label__place">4-я линия Васильевского острова, 47</span>
+          <span class="label__credit">Фото: <a href="https://commons.wikimedia.org/wiki/File:Courtyards_of_SPB_03.jpg">Florstein</a>, CC BY-SA 4.0</span>
+        </figcaption>
+      </figure>
+    </section>
 
-  <section class="testimonials section" id="testimonials">
-    <div class="container">
-      <h2 class="section__title reveal">Kind words</h2>
-      <div class="testimonials__grid">
-        <blockquote class="quote reveal">
-          <p>Marta photographed our wedding the way a friend would: quietly, at the right moments, never in anyone's way. A year later we still find new details in the pictures.</p>
-          <cite>Nadia &amp; Ilya, married in June</cite>
-        </blockquote>
-        <blockquote class="quote reveal">
-          <p>I came for simple headshots and left with a set that finally looks like me. She notices things about light and posture that other photographers never mention.</p>
-          <cite>Timur, actor</cite>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact section section--tint" id="contact">
-    <div class="container contact__grid">
-      <div class="contact__info">
-        <h2 class="section__title reveal">Contact</h2>
-        <p class="reveal">Tell me a little about yourself and what you are planning. I answer within two working days.</p>
-        <p class="contact__lines reveal">
-          Contact details in this portfolio version are placeholders.<br>
-          Email and Instagram can be connected for a real client project.
-        </p>
-      </div>
-      <form class="form reveal" id="contactForm" novalidate>
-        <div class="form__row">
-          <label class="form__field">
-            <span class="form__label">Name</span>
-            <input type="text" name="name" id="fieldName" autocomplete="name" required>
-            <span class="form__error" data-error-for="name"></span>
-          </label>
-          <label class="form__field">
-            <span class="form__label">Email</span>
-            <input type="email" name="email" id="fieldEmail" autocomplete="email" required>
-            <span class="form__error" data-error-for="email"></span>
-          </label>
+    <section class="work" id="syomka" aria-labelledby="syomka-title">
+      <h2 id="syomka-title">Съёмка на заказ</h2>
+      <dl class="work__list">
+        <div>
+          <dt>Объект для архитектурного бюро</dt>
+          <dd>Фасады, интерьеры, детали. Один день на объекте, 20–30 кадров в обработке.</dd>
+          <dd class="work__price">от 35 000 ₽</dd>
         </div>
-        <label class="form__field">
-          <span class="form__label">Shoot type</span>
-          <select name="type" id="fieldType" required>
-            <option value="" selected disabled>Choose one</option>
-            <option value="portrait">Portrait</option>
-            <option value="wedding">Wedding</option>
-            <option value="editorial">Editorial</option>
-            <option value="other">Something else</option>
-          </select>
-          <span class="form__error" data-error-for="type"></span>
-        </label>
-        <label class="form__field">
-          <span class="form__label">Message</span>
-          <textarea name="message" id="fieldMessage" rows="5" required></textarea>
-          <span class="form__error" data-error-for="message"></span>
-        </label>
-        <button class="form__submit" type="submit">Send request</button>
-        <p class="form__success" id="formSuccess" role="status" hidden>Thank you! Your message is on its way. I will reply within two working days.</p>
-      </form>
-    </div>
-  </section>
+        <div>
+          <dt>Фиксация для реставрации</dt>
+          <dd>Состояние до и после работ, съёмка по плану обмеров, файлы для отчёта и архива.</dd>
+          <dd class="work__price">по смете</dd>
+        </div>
+        <div>
+          <dt>Серия для издания</dt>
+          <dd>Город под тему номера: улица, квартал, один дом в разное время суток.</dd>
+          <dd class="work__price">от 25 000 ₽</dd>
+        </div>
+      </dl>
+      <p class="work__note">Перед съёмкой приезжаю без камеры и смотрю, откуда и когда приходит свет. Снимаю со штатива, вертикали держу прямыми, не исправляю их потом. Готовые кадры отдаю через неделю в TIFF и JPEG.</p>
+    </section>
 
-</main>
+    <section class="contact" id="kontakty" aria-labelledby="kontakty-title">
+      <h2 id="kontakty-title">Связаться</h2>
+      <p><a class="contact__mail" href="mailto:studio@example.com">studio@example.com</a></p>
+      <p class="contact__text">Напишите, что за объект и к какому сроку нужны кадры. Отвечаю в течение дня. Снимаю в Петербурге и области, выезд в другие города обсуждаем отдельно.</p>
+    </section>
 
-<footer class="site-footer">
-  <div class="container footer__row">
-    <span>© <span id="year">2026</span> Marta Berg</span>
-    <span>Saint Petersburg</span>
-    <span>Concept portfolio · contact details are demo</span>
-    <a href="#top">Back to top</a>
-  </div>
-</footer>
+    <section class="catalog" aria-labelledby="catalog-title">
+      <h2 id="catalog-title">Каталог</h2>
+      <div class="catalog__scroll" tabindex="0">
+        <table>
+          <thead><tr><th scope="col">№</th><th scope="col">Название</th><th scope="col">Место</th><th scope="col">Автор</th><th scope="col">Лицензия</th></tr></thead>
+          <tbody>
+          <tr><td>01</td><td>Фонарь</td><td>Набережная, туман</td><td><a href="https://commons.wikimedia.org/wiki/File:Myst_(202916037).jpeg">Serge Novikoff</a></td><td>CC BY-SA 3.0</td></tr>
+          <tr><td>02</td><td>Ветка</td><td>Набережная, туман</td><td><a href="https://commons.wikimedia.org/wiki/File:Myst_(202916175).jpeg">Serge Novikoff</a></td><td>CC BY-SA 3.0</td></tr>
+          <tr><td>03</td><td>Колокольня</td><td>Никольский морской собор, Крюков канал</td><td><a href="https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D1%8F_%D0%9C%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%81%D0%BE%D0%B1%D0%BE%D1%80%D0%B0.jpg">Sav-1667</a></td><td>CC BY-SA 3.0</td></tr>
+          <tr><td>04</td><td>Лёд</td><td>Набережная, лёд на реке</td><td><a href="https://commons.wikimedia.org/wiki/File:Myst_(202916253).jpeg">Serge Novikoff</a></td><td>CC BY-SA 3.0</td></tr>
+          <tr><td>05</td><td>Колоннада</td><td>Казанский собор</td><td><a href="https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BE%D1%80.jpg">Александр Скибицкий</a></td><td>CC BY-SA 3.0</td></tr>
+          <tr><td>06</td><td>Спираль</td><td>Садовая, 3, Ордонансгауз</td><td><a href="https://commons.wikimedia.org/wiki/File:Ordonnance_Haus_internal_staircase,_Sadovaya_3,_Saint_Petersburg_iii.jpg">Alandislands</a></td><td>CC BY-SA 4.0</td></tr>
+          <tr><td>07</td><td>Парадная</td><td>Гороховая, 64</td><td><a href="https://commons.wikimedia.org/wiki/File:Gorohovaya_Street_64_4A7A3585_Saint_Petersburg_(35769615751).jpg">Ninara</a></td><td>CC BY 2.0</td></tr>
+          <tr><td>08</td><td>Пролёт</td><td>Чайковского, 42</td><td><a href="https://commons.wikimedia.org/wiki/File:SPb_Tchaikovsky,_42_-_staircase_in_door_(2024-09-26).jpg">Kaganer</a></td><td>CC BY-SA 4.0</td></tr>
+          <tr><td>09</td><td>Световой фонарь</td><td>Садовая, 3, взгляд вверх</td><td><a href="https://commons.wikimedia.org/wiki/File:Ordonnance_Haus_internal_staircase,_Sadovaya_3,_Saint_Petersburg_v.jpg">Alandislands</a></td><td>CC BY-SA 4.0</td></tr>
+          <tr><td>10</td><td>Окно на площадке</td><td>Гороховая, 64</td><td><a href="https://commons.wikimedia.org/wiki/File:Gorokhovaya_street_64_in_Saint-Petersburg,_Russia.jpg">Ninaras</a></td><td>CC BY 4.0</td></tr>
+          <tr><td>11</td><td>Небо</td><td>Рубинштейна, 23</td><td><a href="https://commons.wikimedia.org/wiki/File:Rubinstein_Street_23_(Saint_Petersburg)_-_courtyard.jpg">Kommunalka1912</a></td><td>CC BY-SA 4.0</td></tr>
+          <tr><td>12</td><td>Водосток</td><td>Двор в центре, адрес неизвестен</td><td><a href="https://commons.wikimedia.org/wiki/File:Courtyards_of_St.Petersburg_(25563816025).jpg">Pavel Kirillov</a></td><td>CC BY-SA 2.0</td></tr>
+          <tr><td>13</td><td>Провода</td><td>Рубинштейна, 27</td><td><a href="https://commons.wikimedia.org/wiki/File:Saint_Petersburg._Rubinshteyn_Street,_27._Courtyard._-2024-01-28.jpg">Bestalex</a></td><td>CC BY-SA 4.0</td></tr>
+          <tr><td>14</td><td>Колодец</td><td>Гаванская, 32</td><td><a href="https://commons.wikimedia.org/wiki/File:Saint_Petersburg._Gavanskaya_St.,_32_-_courtyard.jpg">Bestalex</a></td><td>CC0</td></tr>
+          <tr><td>15</td><td>Облако</td><td>4-я линия Васильевского острова, 47</td><td><a href="https://commons.wikimedia.org/wiki/File:Courtyards_of_SPB_03.jpg">Florstein</a></td><td>CC BY-SA 4.0</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
 
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
-  <button class="lightbox__close" id="lightboxClose" aria-label="Close">&times;</button>
-  <button class="lightbox__arrow lightbox__arrow--prev" id="lightboxPrev" aria-label="Previous image">&#8592;</button>
-  <figure class="lightbox__figure">
-    <img id="lightboxImg" src="" alt="">
-    <figcaption id="lightboxCaption"></figcaption>
-  </figure>
-  <button class="lightbox__arrow lightbox__arrow--next" id="lightboxNext" aria-label="Next image">&#8594;</button>
-</div>
+  <footer class="foot">
+    <p>Концепт сайта для вымышленного фотографа. Марты Берг нет, фотографии сделали авторы Wikimedia Commons: они переведены в ч/б, имена и лицензии указаны в каталоге.</p>
+    <p><a href="https://github.com/hmsusbusas-png/marta-berg">Код сайта</a></p>
+  </footer>
 
-<script src="js/main.js"></script>
+  <dialog class="viewer" aria-label="Просмотр фотографии">
+    <img class="viewer__img" src="img/tuman-fonar-720.webp" alt="" loading="lazy">
+    <p class="viewer__cap"></p>
+    <button class="viewer__btn viewer__prev" type="button" aria-label="Предыдущий кадр">←</button>
+    <button class="viewer__btn viewer__next" type="button" aria-label="Следующий кадр">→</button>
+    <button class="viewer__btn viewer__close" type="button" aria-label="Закрыть">Закрыть</button>
+  </dialog>
+  <script src="js/viewer.js" defer></script>
 </body>
 </html>
