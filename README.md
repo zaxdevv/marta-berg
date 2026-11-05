@@ -4,7 +4,7 @@ Portfolio site concept for a fictional architectural photographer in Saint Peter
 
 Концепт сайта для вымышленного фотографа архитектуры из Петербурга. Сайт сделан как зал выставки: три серии («Туман», «Лестницы», «Дворы»), крупные кадры и подписи как в каталоге, интерфейса почти не видно.
 
-Демо: https://hmsusbusas-png.github.io/marta-berg/
+Демо: https://zaxdevv.github.io/marta-berg/
 
 ![Первый экран](docs/desktop.jpg)
 
@@ -22,7 +22,7 @@ Portfolio site concept for a fictional architectural photographer in Saint Peter
 ## Как запустить
 
 ```sh
-git clone https://github.com/hmsusbusas-png/marta-berg
+git clone https://github.com/zaxdevv/marta-berg
 cd marta-berg
 python -m http.server 8000
 ```
